@@ -81,3 +81,25 @@ runProcess(function()
 end)
 ```
   Run empty scene and render. Escape key to return to editor.
+
+# Note Dir Path:
+  Lua script pathing is format different depend what set up. If you using the module package. Read the lua docs. You need to config by default is set to project root and application run path is set.
+```
+project(root)
+-content
+--scripts
+--models
+```
+
+Wicked Engine Path
+```
+dofile(script_dir() .. "game.lua")
+```
+
+Lua Path
+```
+require()
+```
+Note that script_dir() does not work on require(). It would return empty.
+
+It need to append paths by default for look up dir query.

@@ -6,7 +6,7 @@ runProcess(function()
   SetProfilerEnabled(false) -- have a bit more screen space
   scene.Clear()
   ClearWorld()
-  LoadModel(script_dir() .. "assets/level.wiscene")
+  LoadModel(script_dir() .. "content/level.wiscene")
   local path = RenderPath3D()
   application.SetActivePath(path)
 
